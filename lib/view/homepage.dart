@@ -256,6 +256,3 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-  //HELLO
-  // K xa yrr dost naya naulo khabar
-  
