@@ -9,9 +9,9 @@ import 'package:flutter/material.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final height = MediaQuery.of(context).size.height;
-    final width = MediaQuery.of(context).size.width;
-    // final actualHeight = MediaQuery.of(context);
+    // final height = MediaQuery.of(context).size.height; This is used to take the full height of the device
+    // final width = MediaQuery.of(context).size.width; This is used to take the full width of the device
+    // final actualHeight = height - MediaQuery.of(context).padding.top; If we don't want full height then can use this or SafeArea is used
 
     return Scaffold(
       appBar: AppBar(
