@@ -154,15 +154,16 @@ class HomePage extends StatelessWidget {
                             child: Card(
                           child: Column(
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 50),
-                                child: Text(
-                                  booksData[index].name,
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                ),
+                              Text(
+                                booksData[index].name,
+                                style: TextStyle(fontWeight: FontWeight.bold),
                               ),
-                              Image.network(
-                                booksData[index].imageUrl ?? '',
+                              Column(
+                                children: [
+                                  Image.network(
+                                    booksData[index].imageUrl,
+                                  ),
+                                ],
                               ),
                               TextButton(
                                 onPressed: () {},
@@ -199,7 +200,7 @@ class HomePage extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(top: 20),
             color: Colors.blueAccent,
-            height: actualHeight * 0.32,
+            height: actualHeight * 0.33,
             child: ListView.builder(
                 itemCount: bookssData.length,
                 scrollDirection: Axis.horizontal,
@@ -216,14 +217,14 @@ class HomePage extends StatelessWidget {
                           child: Column(
                             children: [
                               Padding(
-                                padding: const EdgeInsets.only(top: 50),
+                                padding: const EdgeInsets.only(top: 20),
                                 child: Text(
                                   bookssData[index].name,
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 ),
                               ),
-                              Image.network(
-                                bookssData[index].imageUrl ?? '',
+                              Image.asset(
+                                bookssData[index].imageUrl,
                               ),
                               TextButton(
                                 onPressed: () {},

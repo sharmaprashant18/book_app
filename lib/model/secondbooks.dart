@@ -1,5 +1,5 @@
 class Books {
-  final String? imageUrl;
+  final String imageUrl;
   final String name;
   final String detail;
   final String genre;
@@ -23,8 +23,7 @@ class Books {
 
 final bookss = [
   {
-    ' imageUrl':
-        'https://en.wikipedia.org/wiki/File:Karnali_Blues_by_Buddhisagar.jpg',
+    'imageUrl': 'assets/cheena.png',
     'name': 'Karnali Blues',
     'genre': 'Fiction',
     'detail':
@@ -32,7 +31,7 @@ final bookss = [
     'rating': '⭐⭐⭐'
   },
   {
-    ' imageUrl': ' https://en.wikipedia.org/wiki/File:Pagal-Basti.jpg',
+    'imageUrl': ' https://en.wikipedia.org/wiki/File:Pagal-Basti.jpg',
     'name': 'Pagal Basti',
     'genre': 'Fiction',
     'detail':
@@ -40,15 +39,15 @@ final bookss = [
     'rating': '⭐⭐⭐⭐'
   },
   {
-    ' imageUrl': 'https://en.wikipedia.org/wiki/File:Maharani_(novel).jpg',
+    'imageUrl': 'https://en.wikipedia.org/wiki/File:Maharani_(novel).jpg',
     'name': 'Maharani',
     'genre': 'Fiction',
     'detail':
-        'The book is a historical fiction based on Chaubisi Rajya and Baise rajya of Nepal.[5] The story is about King Ghanashyam of Parbat and the controversy over his succession by his sons- Malebam and Bhadribam. Malebam is the elder son and has the birthright to the throne whereas Bhadribam was conceived earlier but born later. When Malebam is declared king, Bhadribam revolts while his wife, to everyone\'s surprise, supports Malebam.',
+        'The book is a historical fiction based on Chaubisi Rajya and Baise rajya of Nepal. The story is about King Ghanashyam of Parbat and the controversy over his succession by his sons- Malebam and Bhadribam. Malebam is the elder son and has the birthright to the throne whereas Bhadribam was conceived earlier but born later. When Malebam is declared king, Bhadribam revolts while his wife, to everyone\'s surprise, supports Malebam.',
     'rating': '⭐⭐⭐'
   },
   {
-    ' imageUrl': 'https://en.wikipedia.org/wiki/File:Shirish_ko_Phool.jpg',
+    'imageUrl': 'https://en.wikipedia.org/wiki/File:Shirish_ko_Phool.jpg',
     'name': 'Shrishko Phool',
     'genre': 'Novel',
     'detail':

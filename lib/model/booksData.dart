@@ -1,5 +1,5 @@
 class Book {
-  final String? imageUrl;
+  final String imageUrl;
   final String name;
   final String detail;
   final String genre;
@@ -23,8 +23,8 @@ class Book {
 
 final books = [
   {
-    ' imageUrl':
-        'https://upload.wikimedia.org/wikipedia/en/b/b5/China_Harayeko_Manchhe.jpg?20211116000131',
+    'imageUrl':
+        'https://upload.wikimedia.org/wikipedia/en/b/b5/China_Harayeko_Manchhe.jpg',
     'name': 'Cheena Harayako Manchhe',
     'genre': 'Autobiography',
     'detail':
@@ -32,8 +32,8 @@ final books = [
     'rating': '⭐⭐⭐'
   },
   {
-    ' imageUrl':
-        ' https://upload.wikimedia.org/wikipedia/en/d/d9/Summer_Love_%28novel%29.jpg?20210703023930',
+    'imageUrl':
+        'https://upload.wikimedia.org/wikipedia/en/d/d9/Summer_Love_%28novel%29.jpg',
     'name': 'Summer Love',
     'genre': 'Love Story',
     'detail':
@@ -41,8 +41,8 @@ final books = [
     'rating': '⭐⭐⭐⭐'
   },
   {
-    ' imageUrl':
-        'https://upload.wikimedia.org/wikipedia/en/2/26/Saaya_novel.jpg?20141118060226',
+    'imageUrl':
+        'https://upload.wikimedia.org/wikipedia/en/2/26/Saaya_novel.jpg',
     'name': 'Saaya',
     'genre': 'Romance',
     'detail':
@@ -50,8 +50,8 @@ final books = [
     'rating': '⭐⭐⭐'
   },
   {
-    ' imageUrl':
-        'https://upload.wikimedia.org/wikipedia/en/4/47/Seto_Dharti_by_Amar_Neupane.jpg?20180114073736',
+    'imageUrl':
+        'http://upload.wikimedia.org/wikipedia/en/4/47/Seto_Dharti_by_Amar_Neupane.jpg?20180114073736',
     'name': 'Seto Dharti',
     'genre': 'Fiction',
     'detail':
