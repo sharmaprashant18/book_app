@@ -105,7 +105,6 @@ class HomePage extends StatelessWidget {
             margin: EdgeInsets.only(left: 20, right: 20, top: 40),
             color: Color(0xff026F86),
             height: actualHeight * 0.15,
-            width: double.infinity,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
