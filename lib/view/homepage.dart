@@ -9,9 +9,16 @@ import 'package:flutter/material.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // final height = MediaQuery.of(context).size.height; This is used to take the full height of the device
-    // final width = MediaQuery.of(context).size.width; This is used to take the full width of the device
-    // final actualHeight = height - MediaQuery.of(context).padding.top; If we don't want full height then can use this or SafeArea is used
+    final height = MediaQuery.of(context)
+        .size
+        .height; //This is used to take the full height of the device
+    final width = MediaQuery.of(context)
+        .size
+        .width; //This is used to take the full width of the device
+    final actualHeight = height -
+        MediaQuery.of(context)
+            .padding
+            .top; //If we don't want full height then can use this or SafeArea is used
 
     return Scaffold(
       appBar: AppBar(
@@ -97,7 +104,7 @@ class HomePage extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(left: 20, right: 20, top: 40),
             color: Color(0xff026F86),
-            height: 123,
+            height: actualHeight * 0.13,
             width: double.infinity,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -132,7 +139,7 @@ class HomePage extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(top: 20),
             color: Colors.blueAccent,
-            height: 280,
+            height: actualHeight * 0.33,
             child: ListView.builder(
                 itemCount: booksData.length,
                 scrollDirection: Axis.horizontal,
@@ -193,7 +200,7 @@ class HomePage extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(top: 20),
             color: Colors.blueAccent,
-            height: 300,
+            height: actualHeight * 0.32,
             child: ListView.builder(
                 itemCount: bookssData.length,
                 scrollDirection: Axis.horizontal,
