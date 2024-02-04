@@ -160,9 +160,8 @@ class HomePage extends StatelessWidget {
                               ),
                               Column(
                                 children: [
-                                  Image.network(
-                                    booksData[index].imageUrl,
-                                  ),
+                                  Image.asset(booksData[index].imageUrl,
+                                      height: actualHeight * .22),
                                 ],
                               ),
                               TextButton(
@@ -186,7 +185,9 @@ class HomePage extends StatelessWidget {
                               padding: const EdgeInsets.only(top: 20),
                               child: Column(
                                 children: [
-                                  Text(booksData[index].detail),
+                                  Text(
+                                    booksData[index].detail,
+                                  ),
                                 ],
                               ),
                             )
@@ -216,15 +217,13 @@ class HomePage extends StatelessWidget {
                             child: Card(
                           child: Column(
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 20),
-                                child: Text(
-                                  bookssData[index].name,
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                ),
+                              Text(
+                                bookssData[index].name,
+                                style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                               Image.asset(
                                 bookssData[index].imageUrl,
+                                height: actualHeight * .22,
                               ),
                               TextButton(
                                 onPressed: () {},
@@ -247,7 +246,9 @@ class HomePage extends StatelessWidget {
                               padding: const EdgeInsets.only(top: 20),
                               child: Column(
                                 children: [
-                                  Text(bookssData[index].detail),
+                                  Text(
+                                    bookssData[index].detail,
+                                  ),
                                 ],
                               ),
                             )

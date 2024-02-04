@@ -23,7 +23,7 @@ class Books {
 
 final bookss = [
   {
-    'imageUrl': 'assets/cheena.png',
+    'imageUrl': 'assets/karnali.png',
     'name': 'Karnali Blues',
     'genre': 'Fiction',
     'detail':
@@ -31,7 +31,7 @@ final bookss = [
     'rating': '⭐⭐⭐'
   },
   {
-    'imageUrl': ' https://en.wikipedia.org/wiki/File:Pagal-Basti.jpg',
+    'imageUrl': 'assets/pagalbasti.png',
     'name': 'Pagal Basti',
     'genre': 'Fiction',
     'detail':
@@ -39,7 +39,7 @@ final bookss = [
     'rating': '⭐⭐⭐⭐'
   },
   {
-    'imageUrl': 'https://en.wikipedia.org/wiki/File:Maharani_(novel).jpg',
+    'imageUrl': 'assets/maharani.png',
     'name': 'Maharani',
     'genre': 'Fiction',
     'detail':
@@ -47,7 +47,7 @@ final bookss = [
     'rating': '⭐⭐⭐'
   },
   {
-    'imageUrl': 'https://en.wikipedia.org/wiki/File:Shirish_ko_Phool.jpg',
+    'imageUrl': 'assets/shrishkophool.png',
     'name': 'Shrishko Phool',
     'genre': 'Novel',
     'detail':
