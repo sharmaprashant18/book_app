@@ -3,8 +3,11 @@
 import 'dart:math';
 import 'package:bookapp/model/booksData.dart';
 import 'package:bookapp/model/secondbooks.dart';
+import 'package:bookapp/view/detailpage.dart';
+import 'package:bookapp/view/detailpage2.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -23,10 +26,12 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          IconButton(
-              onPressed: () {},
-              icon: Icon(CupertinoIcons.search),
-              iconSize: 19),
+          InkWell(
+            child: IconButton(
+                onPressed: () {},
+                icon: Icon(CupertinoIcons.search),
+                iconSize: 19),
+          ),
           IconButton(
             onPressed: () {},
             icon: Icon(CupertinoIcons.bell),
@@ -143,57 +148,63 @@ class HomePage extends StatelessWidget {
                 itemCount: booksData.length,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  return Container(
-                    color: Colors.white,
-                    margin: EdgeInsets.only(right: 5),
-                    padding: index == 0 ? EdgeInsets.only(left: 2) : null,
-                    width: 400,
-                    child: Row(
-                      children: [
-                        Expanded(
-                            child: Card(
-                          child: Column(
-                            children: [
-                              Text(
-                                booksData[index].name,
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                              Column(
-                                children: [
-                                  Image.asset(booksData[index].imageUrl,
-                                      height: actualHeight * .22),
-                                ],
-                              ),
-                              TextButton(
-                                onPressed: () {},
-                                style: TextButton.styleFrom(
-                                    foregroundColor: Colors.red),
-                                child: Text(
-                                  booksData[index].genre,
-                                  style: TextStyle(color: Colors.blue),
-                                ),
-                              ),
-                              Text(booksData[index].rating),
-                            ],
-                          ),
-                        )),
-                        SizedBox(width: 10),
-                        Expanded(
+                  return InkWell(
+                    onTap: () {
+                      Get.to(() => DetailPage(booksData[index]),
+                          transition: Transition.zoom);
+                    },
+                    child: Container(
+                      color: Colors.white,
+                      margin: EdgeInsets.only(right: 5),
+                      padding: index == 0 ? EdgeInsets.only(left: 2) : null,
+                      width: 400,
+                      child: Row(
+                        children: [
+                          Expanded(
+                              child: Card(
                             child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(top: 20),
-                              child: Column(
-                                children: [
-                                  Text(
-                                    booksData[index].detail,
+                              children: [
+                                Text(
+                                  booksData[index].name,
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                                Column(
+                                  children: [
+                                    Image.asset(booksData[index].imageUrl,
+                                        height: actualHeight * .22),
+                                  ],
+                                ),
+                                TextButton(
+                                  onPressed: () {},
+                                  style: TextButton.styleFrom(
+                                      foregroundColor: Colors.red),
+                                  child: Text(
+                                    booksData[index].genre,
+                                    style: TextStyle(color: Colors.blue),
                                   ),
-                                ],
-                              ),
-                            )
-                          ],
-                        ))
-                      ],
+                                ),
+                                Text(booksData[index].rating),
+                              ],
+                            ),
+                          )),
+                          SizedBox(width: 10),
+                          Expanded(
+                              child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 20),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      booksData[index].detail,
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          ))
+                        ],
+                      ),
                     ),
                   );
                 }),
@@ -206,55 +217,61 @@ class HomePage extends StatelessWidget {
                 itemCount: bookssData.length,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  return Container(
-                    color: Colors.white,
-                    margin: EdgeInsets.only(right: 5),
-                    padding: index == 0 ? EdgeInsets.only(left: 2) : null,
-                    width: 400,
-                    child: Row(
-                      children: [
-                        Expanded(
-                            child: Card(
-                          child: Column(
-                            children: [
-                              Text(
-                                bookssData[index].name,
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                              Image.asset(
-                                bookssData[index].imageUrl,
-                                height: actualHeight * .22,
-                              ),
-                              TextButton(
-                                onPressed: () {},
-                                style: TextButton.styleFrom(
-                                    foregroundColor: Colors.red),
-                                child: Text(
-                                  bookssData[index].genre,
-                                  style: TextStyle(color: Colors.blue),
-                                ),
-                              ),
-                              Text(bookssData[index].rating),
-                            ],
-                          ),
-                        )),
-                        SizedBox(width: 10),
-                        Expanded(
+                  return InkWell(
+                    onTap: () {
+                      Get.to(() => DetailPages(bookssData[index]),
+                          transition: Transition.zoom);
+                    },
+                    child: Container(
+                      color: Colors.white,
+                      margin: EdgeInsets.only(right: 5),
+                      padding: index == 0 ? EdgeInsets.only(left: 2) : null,
+                      width: 400,
+                      child: Row(
+                        children: [
+                          Expanded(
+                              child: Card(
                             child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(top: 20),
-                              child: Column(
-                                children: [
-                                  Text(
-                                    bookssData[index].detail,
+                              children: [
+                                Text(
+                                  bookssData[index].name,
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                                Image.asset(
+                                  bookssData[index].imageUrl,
+                                  height: actualHeight * .22,
+                                ),
+                                TextButton(
+                                  onPressed: () {},
+                                  style: TextButton.styleFrom(
+                                      foregroundColor: Colors.red),
+                                  child: Text(
+                                    bookssData[index].genre,
+                                    style: TextStyle(color: Colors.blue),
                                   ),
-                                ],
-                              ),
-                            )
-                          ],
-                        ))
-                      ],
+                                ),
+                                Text(bookssData[index].rating),
+                              ],
+                            ),
+                          )),
+                          SizedBox(width: 10),
+                          Expanded(
+                              child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 20),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      bookssData[index].detail,
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          ))
+                        ],
+                      ),
                     ),
                   );
                 }),
