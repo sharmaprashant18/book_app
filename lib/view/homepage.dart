@@ -151,7 +151,8 @@ class HomePage extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return InkWell(
                     onTap: () {
-                      Get.to(() => DetailPage(), transition: Transition.zoom);
+                      Get.to(() => DetailPage(booksData[index]),
+                          transition: Transition.zoom);
                     },
                     child: Container(
                       color: Colors.white,
@@ -208,6 +209,8 @@ class HomePage extends StatelessWidget {
                     ),
                   );
                 }),
+
+            // SECONDCONTAINER
           ),
           Container(
             margin: EdgeInsets.only(top: 20),
@@ -219,7 +222,8 @@ class HomePage extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return InkWell(
                     onTap: () {
-                      Get.to(() => DetailPages(), transition: Transition.zoom);
+                      Get.to(() => DetailPages(bookssData[index]),
+                          transition: Transition.zoom);
                     },
                     child: Container(
                       color: Colors.white,
