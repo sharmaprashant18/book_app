@@ -1,13 +1,22 @@
-import 'package:bookapp/model/secondbooks.dart';
+import 'package:bookapp/model/secondbooks1.dart';
 import 'package:flutter/material.dart';
 
 class DetailPages extends StatelessWidget {
-  final Books boks;
-  DetailPages(this.boks);
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(),
+    return SafeArea(
+      child: Scaffold(
+        body: ListView.builder(
+          itemCount: bookssdata1.length,
+          itemBuilder: (context, index) {
+            return Container(
+              child: Row(
+                children: [Text(bookssdata1[index].detail)],
+              ),
+            );
+          },
+        ),
+      ),
     );
   }
 }

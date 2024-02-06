@@ -4,6 +4,7 @@ import 'dart:math';
 import 'package:bookapp/model/booksData.dart';
 import 'package:bookapp/model/secondbooks.dart';
 import 'package:bookapp/view/detailpage.dart';
+
 import 'package:bookapp/view/detailpage2.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -150,8 +151,7 @@ class HomePage extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return InkWell(
                     onTap: () {
-                      Get.to(() => DetailPage(booksData[index]),
-                          transition: Transition.zoom);
+                      Get.to(() => DetailPage(), transition: Transition.zoom);
                     },
                     child: Container(
                       color: Colors.white,
@@ -196,7 +196,7 @@ class HomePage extends StatelessWidget {
                                 child: Column(
                                   children: [
                                     Text(
-                                      booksData[index].detail,
+                                      booksData[index].summary,
                                     ),
                                   ],
                                 ),
@@ -219,8 +219,7 @@ class HomePage extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return InkWell(
                     onTap: () {
-                      Get.to(() => DetailPages(bookssData[index]),
-                          transition: Transition.zoom);
+                      Get.to(() => DetailPages(), transition: Transition.zoom);
                     },
                     child: Container(
                       color: Colors.white,
@@ -263,7 +262,7 @@ class HomePage extends StatelessWidget {
                                 child: Column(
                                   children: [
                                     Text(
-                                      bookssData[index].detail,
+                                      bookssData[index].summary,
                                     ),
                                   ],
                                 ),
