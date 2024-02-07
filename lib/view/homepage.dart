@@ -25,12 +25,10 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          InkWell(
-            child: IconButton(
-                onPressed: () {},
-                icon: Icon(CupertinoIcons.search),
-                iconSize: 19),
-          ),
+          IconButton(
+              onPressed: () {},
+              icon: Icon(CupertinoIcons.search),
+              iconSize: 19),
           IconButton(
             onPressed: () {},
             icon: Icon(CupertinoIcons.bell),
