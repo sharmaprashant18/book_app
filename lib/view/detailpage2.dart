@@ -31,7 +31,9 @@
 // }
 
 import 'package:bookapp/model/secondbooks.dart';
+import 'package:bookapp/view/moreinfopage.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class DetailPages extends StatelessWidget {
   final Books book1;
@@ -110,7 +112,10 @@ class DetailPages extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(left: 190),
                     child: OutlinedButton(
-                        onPressed: () {}, child: Text('More Info')),
+                        onPressed: () {
+                          Get.to(() => MoreInfo());
+                        },
+                        child: Text('More Info')),
                   )
                 ],
               )
