@@ -1,5 +1,3 @@
-// ignore_for_file: unused_local_variable
-
 import 'dart:math';
 import 'package:bookapp/model/booksData.dart';
 import 'package:bookapp/model/secondbooks.dart';
@@ -16,9 +14,9 @@ class HomePage extends StatelessWidget {
     final height = MediaQuery.of(context)
         .size
         .height; //This is used to take the full height of the device
-    final width = MediaQuery.of(context)
-        .size
-        .width; //This is used to take the full width of the device
+    // final width = MediaQuery.of(context)
+    //     .size
+    //     .width; //This is used to take the full width of the device
     final actualHeight = height -
         MediaQuery.of(context)
             .padding

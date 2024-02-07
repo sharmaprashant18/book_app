@@ -1,35 +1,3 @@
-// import 'package:bookapp/model/secondbooks1.dart';
-// import 'package:flutter/material.dart';
-
-// class DetailPages extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     final height = MediaQuery.of(context).size.height;
-
-//     return SafeArea(
-//       child: Scaffold(
-//         body: ListView.builder(
-//           itemCount: bookssdata1.length,
-//           itemBuilder: (context, index) {
-//             return Container(
-//               margin: EdgeInsets.only(top: height * .45),
-//               child: Column(
-//                 children: [
-//                   Text(
-//                     bookssdata1[index].detail,
-//                     style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-//                   ),
-//                 ],
-//               ),
-//             );
-//           },
-//         ),
-//         backgroundColor: Color(0xffF7BAC5),
-//       ),
-//     );
-//   }
-// }
-
 import 'package:bookapp/model/secondbooks.dart';
 import 'package:bookapp/view/moreinfopage.dart';
 import 'package:flutter/material.dart';
