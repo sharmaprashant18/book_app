@@ -20,7 +20,7 @@ class DetailPage extends StatelessWidget {
                 width: double.infinity,
               ),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.only(right: 2),
                 child: Column(
                   children: [
                     Row(

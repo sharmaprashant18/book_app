@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
           ),
         ],
         title: Text(
-          'Hello Stranger❤️,',
+          'Hello Stranger❤️',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
@@ -211,7 +211,7 @@ class HomePage extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(top: 20),
             color: Colors.blueAccent,
-            height: actualHeight * 0.33,
+            height: actualHeight * 0.45,
             child: ListView.builder(
                 itemCount: bookssData.length,
                 scrollDirection: Axis.horizontal,
