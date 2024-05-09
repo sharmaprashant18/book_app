@@ -140,7 +140,7 @@ class HomePage extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(top: 20),
             color: Colors.blueAccent,
-            height: actualHeight * 0.33,
+            height: actualHeight * 0.48,
             child: ListView.builder(
                 itemCount: booksData.length,
                 scrollDirection: Axis.horizontal,
@@ -211,7 +211,7 @@ class HomePage extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(top: 20),
             color: Colors.blueAccent,
-            height: actualHeight * 0.45,
+            height: actualHeight * 0.48,
             child: ListView.builder(
                 itemCount: bookssData.length,
                 scrollDirection: Axis.horizontal,
