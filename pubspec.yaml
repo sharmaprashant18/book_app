@@ -40,9 +40,13 @@ dependencies:
   flutter_native_splash: ^2.4.0
   
 flutter_native_splash:
-  color: "#ffffff"
+  color: "#121212"
   image: assets/booksplash.png
-  color_dark: "#121212"
+  color_dark: "#ffffff"
+  android_12:
+    image:  assets/booksplash.png
+  web: false
+
   
 
 
